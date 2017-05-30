@@ -9,7 +9,7 @@ import scrapy
 from scrapy.item import Item, Field
 
 
-class PropertiesItem(scrapy.Item):
+class DegreeItem(scrapy.Item):
     # Primary Fields
     course_title = Field()
     stammdaten = Field()
@@ -26,3 +26,14 @@ class PropertiesItem(scrapy.Item):
     spider = Field()
     server = Field()
     date = Field()
+
+class CourseItem(scrapy.Item):
+    # Primary Fields 
+    university = Field()
+    degree = Field()
+    degree_type = Field()
+    course_module = Field()
+    course_title = Field()
+    course_ects = Field()
+    course_content = Field()
+    course_teacher = Field()
